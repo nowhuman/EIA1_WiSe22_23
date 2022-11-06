@@ -1,0 +1,99 @@
+/*typography style*/
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color:aliceblue
+
+}
+
+.p1 {
+    padding: 15px 20px;
+}
+
+.titel {
+    padding: 50px 20px;
+    margin: 15px;
+}
+
+/*background style*/
+body {
+    background-color: #060F01;
+}
+
+.imagelocation1 {
+    text-align: center;
+}
+
+/*header*/
+.header {
+
+    float: right;
+    height: 100px;
+    padding: 20px 20px;
+}
+
+/*navigation style*/
+.nav {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+/*Navigation Style*/
+.nav a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/*Impressum*/
+.footer {
+    background-color: #333;
+    text-align: right;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer p {
+    padding: 15px 30px 15px 15px;
+}
+
+/*Adapt to size of screen*/
+.ImageFlex {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.videoTextFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*Layout*/
+.titelAndText {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.AboutMeText {
+    width: 100px;
+}
+
+.Contact-padding{
+    padding: 15px 20px;
+}
+
+.Project-padding{
+    padding: 15px 20px;
+}
