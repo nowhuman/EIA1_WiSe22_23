@@ -55,14 +55,21 @@ body {
 
 /*Impressum*/
 .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
     background-color: #333;
-    text-align: right;
     bottom: 0px;
     width: 100%;
+}
+.footer img{
+    margin-top: 25px;
 }
 
 .footer p {
     padding: 15px 30px 15px 15px;
+    text-align: right;
+    height: fit-content;
 }
 
 /*Adapt to size of screen*/
