@@ -1,0 +1,167 @@
+/*typography style*/
+body {
+    font-family: 'Roboto', cursive;
+    color:aliceblue
+
+}
+
+.p1 {
+    padding: 15px 20px;
+}
+
+.titel {
+    padding: 50px 20px;
+    margin: 15px;
+}
+
+/*background style*/
+body {
+    background-color: #060F01;
+}
+
+.imagelocation1 {
+    text-align: center;
+}
+
+/*header*/
+.header {
+
+    float: right;
+    height: 100px;
+    padding: 20px 20px;
+}
+
+/*navigation style*/
+.nav {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+/*Navigation Style*/
+.nav a:hover {
+    background-color: whitesmoke;
+    color: black;
+    width: 100px;
+    height:30px;
+    padding: 15px 20px;
+}
+
+/*Impressum*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: #333;
+    bottom: 0px;
+    width: 100%;
+}
+.footer img{
+    margin-top: 25px;
+    opacity: 50%;
+}
+.footer img:hover{
+    opacity: 100%;
+}
+
+.footer p {
+    padding: 15px 30px 15px 15px;
+    text-align: right;
+    height: fit-content;
+}
+
+/*Adapt to size of screen*/
+.ImageFlex {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.videoTextFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*Layout*/
+.titelAndText {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.AboutMeText {
+    width: 100px;
+}
+
+.Contact-padding{
+    padding: 15px 20px;
+}
+
+
+/*Images scale*/
+.image-opacity img{
+   cursor: pointer;
+   width: 400px;
+   height: 400px;
+}
+
+
+.image-opacity:hover img{
+    opacity: 0.1;
+    z-index: 1;
+
+}
+.image-opacity img:hover{
+    transform: scale(1.5);
+    z-index: 2;
+    opacity: 1;
+}
+
+@keyframes fade {
+	0%      { opacity: 0; }  /** fadeIn beginnt            **/
+	11.11%  { opacity: 1; }  /** Bild steht                **/
+	33.33%  { opacity: 1; }  /** Bild bleibt zwei Sekunden **/
+	44.44%  { opacity: 0; }  /** fadeOut beendet           **/
+	100%    { opacity: 0; }
+}
+css-slides img { 
+    opacity:0; 
+    animation-name: fade; 
+    animation-duration: 9s; 
+    animation-iteration-count: infinite; 
+    position:absolute; 
+    text-align: center; 
+}
+css-slides img:nth-child(1) { animation-delay: 0s; }
+css-slides img:nth-child(2) { animation-delay: 3s; }
+css-slides img:nth-child(3) { animation-delay: 6s; } 
+
+css-slides {
+	position:relative;
+	height:0;
+	padding-bottom: calc(286/460 * 100%);
+	overflow:hidden;
+	display:block;
+}
+
+/* Looking for internship */
+.lookingforinternship {
+    position: sticky;
+    bottom: 1rem;
+    align-self: flex-end;
+    float: right;
+    width: 300px;
+    height: 300px;
+
+  }

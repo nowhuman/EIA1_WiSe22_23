@@ -51,6 +51,9 @@ body {
 .nav a:hover {
     background-color: whitesmoke;
     color: black;
+    width: 100px;
+    height:100px;
+    padding: 15px 20px;
 }
 
 /*Impressum*/
@@ -64,6 +67,10 @@ body {
 }
 .footer img{
     margin-top: 25px;
+    opacity: 50%;
+}
+.footer img:hover{
+    opacity: 100%;
 }
 
 .footer p {
@@ -103,4 +110,32 @@ body {
 
 .Project-padding{
     padding: 15px 20px;
+   
+}
+.Project-padding img{
+   cursor: pointer;
+   width: 400px;
+   height: 400px;
+}
+
+/*Images scale*/
+.Project-padding img:hover{
+    position: relative;
+width: 500px;
+height:500px;
+}
+
+/*Image changes opacity*/
+#project1:hover + #project2{
+    opacity: 50%;
+}
+
+css-slides img { 
+    opacity:0; 
+    animation-name: fade; 
+    animation-duration: 9s; 
+    animation-iteration-count: infinite; 
+    position:absolute; 
+    left:0; 
+    right:0; 
 }
