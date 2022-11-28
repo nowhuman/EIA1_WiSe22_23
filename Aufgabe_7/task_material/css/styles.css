@@ -6,6 +6,11 @@ body {
     background: linear-gradient(to bottom right, #0b51dd 0%, #001847 100%);
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .wrapper {
     display: inline-block;
     opacity: .5;
